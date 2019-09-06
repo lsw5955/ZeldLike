@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CarmeraMovement : MonoBehaviour
+public class CameraMovement : MonoBehaviour
 {
     public Transform target;
     public float smoother;
