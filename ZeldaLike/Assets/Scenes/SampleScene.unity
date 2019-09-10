@@ -6152,6 +6152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc484b83cbcdad549a5f20d011c65688, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentState: 0
   speed: 4
 --- !u!95 &905581653
 Animator:
@@ -8666,8 +8667,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1.2, y: -2.2}
-  m_SizeDelta: {x: 847.1, y: 136.4}
+  m_AnchoredPosition: {x: -7.9, y: -2.2}
+  m_SizeDelta: {x: 472.2, y: 136.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1837069904
 MonoBehaviour:
@@ -8746,8 +8747,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 1.8, y: 109.20001}
-  m_SizeDelta: {x: 1003.5, y: 206.3}
+  m_AnchoredPosition: {x: 0.8, y: 109.20001}
+  m_SizeDelta: {x: 624.8, y: 206.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1914958202
 MonoBehaviour:
@@ -8868,6 +8869,27 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Size.y
       value: 0.8404093
+      objectReference: {fileID: 0}
+    - target: {fileID: 6494773011600971379, guid: 938dbaecb925c164fbb98b092e1e2c36,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 4479181887894498110, guid: 2ff248c64e3f6b847a5a89238a7aa1f4,
+        type: 3}
+    - target: {fileID: 6494773011600971379, guid: 938dbaecb925c164fbb98b092e1e2c36,
+        type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6494773011600971379, guid: 938dbaecb925c164fbb98b092e1e2c36,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: -587492991
+      objectReference: {fileID: 0}
+    - target: {fileID: 6494773011600971379, guid: 938dbaecb925c164fbb98b092e1e2c36,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 938dbaecb925c164fbb98b092e1e2c36, type: 3}
