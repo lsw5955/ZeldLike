@@ -34,12 +34,12 @@ public class PlayerMovement : MonoBehaviour
             animator.SetFloat("moveX", change.x);
             animator.SetFloat("moveY", change.y);
             animator.SetBool("moving", true);
-            Debug.Log("我动了啊");
+            //Debug.Log("我动了啊");
         }
         else
         {
             animator.SetBool("moving", false);
-            Debug.Log("我没动啊");
+            //Debug.Log("我没动啊");
         }
     }
 
