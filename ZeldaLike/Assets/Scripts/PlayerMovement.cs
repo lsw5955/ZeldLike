@@ -23,8 +23,8 @@ public class PlayerMovement : MonoBehaviour
         currentState = PlayerState.walk;
         animator = GetComponent<Animator>();
         myRigidbody = GetComponent<Rigidbody2D>();
-        //animator.SetFloat("moveX", 0);
-        //animator.SetFloat("moveY", -1);
+        animator.SetFloat("moveX", 0);
+        animator.SetFloat("moveY", -1);
     }
 
     // Update is called once per frame
@@ -36,6 +36,7 @@ public class PlayerMovement : MonoBehaviour
         if(Input.GetButtonDown("Attack") && currentState != PlayerState.attack)
         {
             StartCoroutine(AttackCo());
+            Debug.Log("moveX: " + animator.GetFloat("moveX") + "|| moveY: " + animator.GetFloat("moveY"));
         }
         else if(currentState == PlayerState.walk)
         {
@@ -62,17 +63,19 @@ public class PlayerMovement : MonoBehaviour
             animator.SetFloat("moveX", change.x);
             animator.SetFloat("moveY", change.y);
             animator.SetBool("moving", true);
-            //Debug.Log("我动了啊");
+            Debug.Log("我动了啊");
         }
         else
         {
+            myRigidbody.MovePosition(transform.position + new Vector3(0,0.001f,0));
             animator.SetBool("moving", false);
-            //Debug.Log("我没动啊");
+            Debug.Log("我没动啊");
         }
     }
 
     void MoveCharacter()
     {
+        change.Normalize();
         myRigidbody.MovePosition(transform.position + change * speed * Time.deltaTime);
     }
 }
