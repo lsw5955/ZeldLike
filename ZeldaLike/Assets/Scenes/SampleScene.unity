@@ -6306,7 +6306,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1477535507
-  m_SortingLayer: 4
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 7152930139536384079, guid: 1ea59a5afc241924dbd15fc7742641df,
     type: 3}
@@ -6584,9 +6584,8 @@ GameObject:
   - component: {fileID: 1291741326}
   - component: {fileID: 1291741329}
   - component: {fileID: 1291741330}
-  - component: {fileID: 1291741331}
   m_Layer: 0
-  m_Name: log
+  m_Name: log_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6645,7 +6644,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1191678817
+  m_SortingLayerID: -1477535507
   m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: -5034061168752090764, guid: 0821dd9c54ba97444959e7c9871eb404,
@@ -6668,7 +6667,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1291741325}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.72, y: -2.23, z: 0}
+  m_LocalPosition: {x: -1.44, y: -7.89, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -6721,26 +6720,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &1291741331
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1291741325}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 848b60361ba763f419cd80434620e7ce, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemyName: LLLLLLog
-  health: 2
-  baseAttack: 1
-  moveSpeed: 1.5
-  target: {fileID: 905581649}
-  chaseRaidus: 4
-  attackRaidus: 2
-  homePosition: {fileID: 1291741328}
 --- !u!1001 &1325294243
 PrefabInstance:
   m_ObjectHideFlags: 0
