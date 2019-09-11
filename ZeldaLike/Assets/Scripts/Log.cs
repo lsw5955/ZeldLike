@@ -23,7 +23,7 @@ public class Log : Enemy
 
     void CheckDistance()
     {
-        if(Vector3.Distance(target.position,transform.position) <= chaseRaidus)
+        if(Vector3.Distance(target.position,transform.position) <= chaseRaidus && Vector3.Distance(target.position, transform.position) >= attackRaidus)
         {
             transform.position = Vector3.MoveTowards(transform.position, target.position, moveSpeed*Time.deltaTime);
         }
