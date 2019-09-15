@@ -6,7 +6,9 @@ public enum PlayerState
 {
     walk,
     attack,
-    interact
+    interact,
+    stagger,
+    idle
 }
 
 public class PlayerMovement : MonoBehaviour
@@ -26,19 +28,19 @@ public class PlayerMovement : MonoBehaviour
         animator.SetFloat("moveX", 0);
         animator.SetFloat("moveY", -1);
     }
-
+    
     // Update is called once per frame
     void Update()
     {
         change = Vector3.zero;
         change.x = Input.GetAxis("Horizontal");
         change.y = Input.GetAxis("Vertical");
-        if(Input.GetButtonDown("Attack") && currentState != PlayerState.attack)
+        if (Input.GetButtonDown("Attack") && currentState != PlayerState.attack && currentState != PlayerState.stagger)
         {
             StartCoroutine(AttackCo());
             Debug.Log("moveX: " + animator.GetFloat("moveX") + "|| moveY: " + animator.GetFloat("moveY"));
         }
-        else if(currentState == PlayerState.walk)
+        else if (currentState == PlayerState.walk || currentState == PlayerState.idle)
         {
             UpdateAnimationAndMove();
         }
@@ -63,12 +65,10 @@ public class PlayerMovement : MonoBehaviour
             animator.SetFloat("moveX", change.x);
             animator.SetFloat("moveY", change.y);
             animator.SetBool("moving", true);
-            //Debug.Log("我动了啊");
         }
         else
         {
             animator.SetBool("moving", false);
-            //Debug.Log("我没动啊");
         }
     }
 
@@ -76,5 +76,20 @@ public class PlayerMovement : MonoBehaviour
     {
         change.Normalize();
         myRigidbody.MovePosition(transform.position + change * speed * Time.deltaTime);
+    }
+
+    public void Knock(float knockTime)
+    {
+        StartCoroutine(KnockCo(knockTime));
+    }
+
+    private IEnumerator KnockCo(float knockTime)
+    {
+        if (myRigidbody != null )
+        {
+            yield return new WaitForSeconds(knockTime);
+            myRigidbody.velocity = Vector2.zero;
+            currentState = PlayerState.idle;
+        }
     }
 }

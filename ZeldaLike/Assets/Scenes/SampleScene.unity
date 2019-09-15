@@ -5770,10 +5770,10 @@ GameObject:
   m_Component:
   - component: {fileID: 437295947}
   - component: {fileID: 437295948}
-  - component: {fileID: 437295949}
+  - component: {fileID: 437295950}
   m_Layer: 0
   m_Name: rightHitbox
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5818,11 +5818,15 @@ PolygonCollider2D:
   m_Points:
     m_Paths:
     - - {x: 0.21872091, y: -0.5262022}
-      - {x: 0.49719524, y: -0.68774986}
-      - {x: 0.96166444, y: -0.093801975}
-      - {x: 0.5611329, y: 0.38285017}
+      - {x: 0.486354, y: -0.540575}
+      - {x: 0.48331404, y: -0.5408783}
+      - {x: 0.22056341, y: -0.52993584}
+      - {x: 0.48959935, y: -0.54530907}
+      - {x: 0.6154195, y: -0.43129015}
+      - {x: 0.9553939, y: -0.07396889}
+      - {x: 0.5814377, y: 0.34564924}
       - {x: 0.35409737, y: 0.27708912}
---- !u!114 &437295949
+--- !u!114 &437295950
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5831,9 +5835,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 437295946}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d88d9ceffb044e0468f5495b0761f637, type: 3}
+  m_Script: {fileID: 11500000, guid: 06b1341b17f1af34bb1919c7fe25b151, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  thrust: 2
+  knockTime: 0.4
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -6324,7 +6330,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 905581647}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.87, y: -4.62, z: 0}
+  m_LocalPosition: {x: -4.53, y: -7.16, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2046585014}
@@ -6414,20 +6420,32 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &905581654
-MonoBehaviour:
+--- !u!61 &905581654
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 905581647}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 06b1341b17f1af34bb1919c7fe25b151, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  thrust: 4
-  knockTime: 0.2
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.00000011920929, y: -0.10264182}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 2}
+    newSize: {x: 1, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.8563013, y: 1.3841491}
+  m_EdgeRadius: 0
 --- !u!1 &1236775444
 GameObject:
   m_ObjectHideFlags: 0
@@ -6438,10 +6456,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1236775445}
   - component: {fileID: 1236775446}
-  - component: {fileID: 1236775447}
+  - component: {fileID: 1236775448}
   m_Layer: 0
   m_Name: leftHitbox
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6490,7 +6508,7 @@ PolygonCollider2D:
       - {x: -0.9886699, y: -0.1739521}
       - {x: -0.68120384, y: 0.33609533}
       - {x: -0.4607687, y: 0.2971263}
---- !u!114 &1236775447
+--- !u!114 &1236775448
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6499,9 +6517,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1236775444}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d88d9ceffb044e0468f5495b0761f637, type: 3}
+  m_Script: {fileID: 11500000, guid: 06b1341b17f1af34bb1919c7fe25b151, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  thrust: 2
+  knockTime: 0.4
 --- !u!1 &1254643735
 GameObject:
   m_ObjectHideFlags: 0
@@ -6595,6 +6615,8 @@ GameObject:
   - component: {fileID: 1291741329}
   - component: {fileID: 1291741330}
   - component: {fileID: 1291741331}
+  - component: {fileID: 1291741332}
+  - component: {fileID: 1291741333}
   m_Layer: 0
   m_Name: log
   m_TagString: enemy
@@ -6678,7 +6700,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1291741325}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.72, y: -2.23, z: 0}
+  m_LocalPosition: {x: 0.73, y: -5.82, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -6718,7 +6740,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1291741325}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -6743,16 +6765,57 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 848b60361ba763f419cd80434620e7ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentState: 0
   enemyName: LLLLLLog
   health: 2
   baseAttack: 1
   moveSpeed: 1.5
-  myRigibody: {fileID: 1291741330}
-  target: {fileID: 905581649}
+  myRigibody: {fileID: 0}
+  target: {fileID: 0}
   chaseRaidus: 4
-  attackRaidus: 1.5
+  attackRaidus: 2
   homePosition: {fileID: 1291741328}
   anim: {fileID: 1291741326}
+--- !u!61 &1291741332
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1291741325}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.057712257, y: -0.1896267}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 2, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.2579826, y: 1.3898973}
+  m_EdgeRadius: 0
+--- !u!114 &1291741333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1291741325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06b1341b17f1af34bb1919c7fe25b151, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thrust: 2
+  knockTime: 0.2
 --- !u!1001 &1325294243
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9299,10 +9362,10 @@ GameObject:
   m_Component:
   - component: {fileID: 2014534055}
   - component: {fileID: 2014534056}
-  - component: {fileID: 2014534057}
+  - component: {fileID: 2014534058}
   m_Layer: 0
   m_Name: upHitbox
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9351,7 +9414,7 @@ PolygonCollider2D:
       - {x: 0.47450966, y: 0.4459691}
       - {x: 0.4676242, y: -0.13145065}
       - {x: 0.18045652, y: 0.21366549}
---- !u!114 &2014534057
+--- !u!114 &2014534058
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9360,9 +9423,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 2014534054}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d88d9ceffb044e0468f5495b0761f637, type: 3}
+  m_Script: {fileID: 11500000, guid: 06b1341b17f1af34bb1919c7fe25b151, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  thrust: 2
+  knockTime: 0.4
 --- !u!1 &2046585013
 GameObject:
   m_ObjectHideFlags: 0
@@ -9373,10 +9438,10 @@ GameObject:
   m_Component:
   - component: {fileID: 2046585014}
   - component: {fileID: 2046585015}
-  - component: {fileID: 2046585016}
+  - component: {fileID: 2046585017}
   m_Layer: 0
   m_Name: downHitbox
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9425,7 +9490,7 @@ PolygonCollider2D:
       - {x: -0.3875389, y: -0.901988}
       - {x: 0.48766184, y: -0.9663534}
       - {x: 0.40753078, y: -0.477664}
---- !u!114 &2046585016
+--- !u!114 &2046585017
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9434,9 +9499,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 2046585013}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d88d9ceffb044e0468f5495b0761f637, type: 3}
+  m_Script: {fileID: 11500000, guid: 06b1341b17f1af34bb1919c7fe25b151, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  thrust: 2
+  knockTime: 0.4
 --- !u!1001 &274649147351074553
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9453,6 +9520,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6927625618787202207, guid: 938dbaecb925c164fbb98b092e1e2c36,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 3378690849260521064, guid: 938dbaecb925c164fbb98b092e1e2c36,
         type: 3}
