@@ -20,12 +20,34 @@ public class Log : Enemy
         target = GameObject.FindWithTag("Player").transform;
     }
     
-     private void Awake()
+    private void changeAnim(Vector2 direction)
     {
+        if(Mathf.Abs(direction.x) > Mathf.Abs(direction.y))
+        {
+            if(direction.x >0)
+            {
+                anim.SetFloat("moveX", 1);
+            }
+            else
+            {
+                anim.SetFloat("moveX", -1);
+            }
+        }
+        else if (Mathf.Abs(direction.x) < Mathf.Abs(direction.y))
+        {
+            if (direction.y > 0)
+            {
+                anim.SetFloat("moveY", 1);
+            }
+            else
+            {
+                anim.SetFloat("moveY", -1);
+            }
+        }
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         CheckDistance();
     }
@@ -37,11 +59,17 @@ public class Log : Enemy
         {
             //Debug.Log("进入追击范围, 此时敌人状态 : " + currentState);
             if (currentState == EnemyState.walk || currentState == EnemyState.idle || currentState != EnemyState.stagger)
-            { 
-                Vector3 temp = Vector3.MoveTowards(transform.position, target.position, moveSpeed*Time.deltaTime);
+            {
+                Vector3 temp = Vector3.MoveTowards(transform.position, target.position, moveSpeed * Time.deltaTime);
+                changeAnim(temp - transform.position);
                 myRigibody.MovePosition(temp);
                 ChangerState(EnemyState.walk);
+                anim.SetBool("wakeup", true);
             }
+        }
+        else if (Vector3.Distance(target.position, transform.position) > chaseRaidus)
+        {
+            anim.SetBool("wakeup", false);
         }
     }
 
