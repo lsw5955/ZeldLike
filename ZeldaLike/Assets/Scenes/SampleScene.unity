@@ -5840,6 +5840,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thrust: 2
   knockTime: 0.4
+  damage: 50
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -6522,6 +6523,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thrust: 2
   knockTime: 0.4
+  damage: 50
 --- !u!1 &1254643735
 GameObject:
   m_ObjectHideFlags: 0
@@ -6767,6 +6769,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentState: 0
   enemyName: LLLLLLog
+  maxHealth: {fileID: 11400000, guid: a5ac3a2c380928643bb0ac9b4b782860, type: 2}
   health: 2
   baseAttack: 1
   moveSpeed: 1.5
@@ -6816,6 +6819,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thrust: 2
   knockTime: 0.2
+  damage: 0
 --- !u!1001 &1325294243
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9428,6 +9432,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thrust: 2
   knockTime: 0.4
+  damage: 50
 --- !u!1 &2046585013
 GameObject:
   m_ObjectHideFlags: 0
@@ -9504,6 +9509,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thrust: 2
   knockTime: 0.4
+  damage: 50
 --- !u!1001 &274649147351074553
 PrefabInstance:
   m_ObjectHideFlags: 0

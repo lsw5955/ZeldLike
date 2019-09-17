@@ -5,7 +5,8 @@ using UnityEngine;
 public class Knockback : MonoBehaviour
 {
     public float thrust;
-    public float knockTime; 
+    public float knockTime;
+    public float damage;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -19,20 +20,21 @@ public class Knockback : MonoBehaviour
             Rigidbody2D hit = other.GetComponent<Rigidbody2D>();
             if(hit!=null)
             {
-                if(other.gameObject.CompareTag("enemy"))
+                Vector2 difference = hit.transform.position - transform.position;
+                difference = difference.normalized * thrust;
+                hit.AddForce(difference, ForceMode2D.Impulse);
+
+                if (other.gameObject.CompareTag("enemy") && other.isTrigger)
                 {
+                    Debug.Log("我执行了!");
                     hit.GetComponent<Enemy>().currentState = EnemyState.stagger;
-                    hit.GetComponent<Enemy>().Knock(hit, knockTime);
+                    hit.GetComponent<Enemy>().Knock(hit, knockTime,damage);
                 }
                 else if (other.gameObject.CompareTag("Player"))
                 {
                     hit.GetComponent<PlayerMovement>().currentState = PlayerState.stagger;
                     hit.GetComponent<PlayerMovement>().Knock(knockTime);
                 }
-
-                Vector2 difference = hit.transform.position - transform.position;
-                difference = difference.normalized * thrust;
-                hit.AddForce(difference, ForceMode2D.Impulse);
             }
         }
     }
