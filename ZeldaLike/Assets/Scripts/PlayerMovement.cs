@@ -18,6 +18,8 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D myRigidbody;
     private Vector3 change;
     private Animator animator;
+    public FloatValue currentHealth;
+    public Signaler PlayerHealthSignaler;
 
     // Start is called before the first frame update
     void Start()
@@ -78,15 +80,29 @@ public class PlayerMovement : MonoBehaviour
         myRigidbody.MovePosition(transform.position + change * speed * Time.deltaTime);
     }
 
-    public void Knock(float knockTime)
-    {
-        StartCoroutine(KnockCo(knockTime));
+    public void Knock(float knockTime, float damage)
+    {        
+        currentHealth.initialValue -= damage;
+
+        PlayerHealthSignaler.Raise();
+        Debug.Log("进入PlayerMovement内的Knock方法,  currentHealth.initialValue : " + currentHealth.initialValue);
+        if (currentHealth.initialValue > 0)
+        {
+            //Debug.Log("启动玩家生命信号");
+            StartCoroutine(KnockCo(knockTime));
+        }
+        else
+        {
+            this.gameObject.SetActive(false);
+        }
+        
     }
 
     private IEnumerator KnockCo(float knockTime)
     {
         if (myRigidbody != null )
         {
+            //Debug.Log("延迟方法执行");
             yield return new WaitForSeconds(knockTime);
             myRigidbody.velocity = Vector2.zero;
             currentState = PlayerState.idle;
