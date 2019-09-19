@@ -82,11 +82,11 @@ public class PlayerMovement : MonoBehaviour
 
     public void Knock(float knockTime, float damage)
     {        
-        currentHealth.initialValue -= damage;
+        currentHealth.runtimeValue -= damage;
 
         PlayerHealthSignaler.Raise();
-        Debug.Log("进入PlayerMovement内的Knock方法,  currentHealth.initialValue : " + currentHealth.initialValue);
-        if (currentHealth.initialValue > 0)
+        Debug.Log("进入PlayerMovement内的Knock方法,  currentHealth.runtimeValue : " + currentHealth.runtimeValue);
+        if (currentHealth.runtimeValue > 0)
         {
             //Debug.Log("启动玩家生命信号");
             StartCoroutine(KnockCo(knockTime));

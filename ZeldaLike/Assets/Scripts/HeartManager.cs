@@ -29,7 +29,7 @@ public class HeartManager : MonoBehaviour
 
     public void UpdateHearts()
     {
-        float tempHealth = playerCurrentHealth.initialValue/2;
+        float tempHealth = playerCurrentHealth.runtimeValue/2;
         Debug.Log("UpdateHearts中此时tempHealth为" + tempHealth);
         for(int i = 0; i< heartContainer.initialValue;i++)
         {
