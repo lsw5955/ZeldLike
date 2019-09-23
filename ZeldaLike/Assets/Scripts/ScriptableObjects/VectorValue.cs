@@ -13,7 +13,7 @@ public class VectorValue : ScriptableObject, ISerializationCallbackReceiver
     }
     public void OnAfterDeserialize()
     {
-        Debug.Log("我反序列化了");
+        //Debug.Log("我反序列化了");
         initialValue = defaultValue;
     }
 }

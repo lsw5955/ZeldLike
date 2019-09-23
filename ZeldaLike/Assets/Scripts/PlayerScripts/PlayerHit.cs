@@ -7,7 +7,7 @@ public class PlayerHit : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log(this.gameObject.name + "我触发了");
+        //Debug.Log(this.gameObject.name + "我触发了");
         if(other.CompareTag("breakable"))
         {
             other.GetComponent<pot>().smash();

@@ -9,6 +9,8 @@ public class sign : MonoBehaviour
     public Text dialogTxt;
     public string dialog;
     public bool playerInRange;
+    public Signaler contextClueOn;
+    public Signaler contextClueOff;
 
     // Update is called once per frame
     void Update()
@@ -31,6 +33,7 @@ public class sign : MonoBehaviour
     {
         if(other.CompareTag("Player"))
         {
+            contextClueOn.Raise();
             playerInRange = true;
         }
     }

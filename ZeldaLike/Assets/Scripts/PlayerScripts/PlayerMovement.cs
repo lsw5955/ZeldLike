@@ -42,7 +42,7 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetButtonDown("Attack") && currentState != PlayerState.attack && currentState != PlayerState.stagger)
         {
             StartCoroutine(AttackCo());
-            Debug.Log("moveX: " + animator.GetFloat("moveX") + "|| moveY: " + animator.GetFloat("moveY"));
+            //Debug.Log("moveX: " + animator.GetFloat("moveX") + "|| moveY: " + animator.GetFloat("moveY"));
         }
         else if (currentState == PlayerState.walk || currentState == PlayerState.idle)
         {
@@ -87,7 +87,7 @@ public class PlayerMovement : MonoBehaviour
         currentHealth.runtimeValue -= damage;
 
         PlayerHealthSignaler.Raise();
-        Debug.Log("进入PlayerMovement内的Knock方法,  currentHealth.runtimeValue : " + currentHealth.runtimeValue);
+        //Debug.Log("进入PlayerMovement内的Knock方法,  currentHealth.runtimeValue : " + currentHealth.runtimeValue);
         if (currentHealth.runtimeValue > 0)
         {
             //Debug.Log("启动玩家生命信号");

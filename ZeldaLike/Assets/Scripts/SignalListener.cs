@@ -15,6 +15,7 @@ public class SignalListener : MonoBehaviour
 
     private void OnEnable()
     {
+        Debug.Log("我开始注册到Signal");
         signal.RegisterListner(this);
     }
 

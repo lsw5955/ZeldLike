@@ -17,6 +17,7 @@ public class Signaler : ScriptableObject
 
     public void RegisterListner(SignalListener listener)
     {
+        Debug.Log("我开始添加监听者");
         listeners.Add(listener);
     }
 
