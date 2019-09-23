@@ -4821,8 +4821,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1333691373, guid: c1d3adbe9845e7649b71a896b4c97acc, type: 3}
+      propertyPath: sceneToLoad
+      value: SampleScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 1333691373, guid: c1d3adbe9845e7649b71a896b4c97acc, type: 3}
       propertyPath: playerPosition.y
       value: -0.98
+      objectReference: {fileID: 0}
+    - target: {fileID: 1333691373, guid: c1d3adbe9845e7649b71a896b4c97acc, type: 3}
+      propertyPath: playerPosition.x
+      value: -11.52
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1d3adbe9845e7649b71a896b4c97acc, type: 3}

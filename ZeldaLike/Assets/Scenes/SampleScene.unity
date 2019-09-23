@@ -39758,7 +39758,7 @@ PrefabInstance:
     - target: {fileID: 354451896753165572, guid: c1d3adbe9845e7649b71a896b4c97acc,
         type: 3}
       propertyPath: m_Name
-      value: SceneTransitionPfb
+      value: SceneTransition
       objectReference: {fileID: 0}
     - target: {fileID: 354451896753165573, guid: c1d3adbe9845e7649b71a896b4c97acc,
         type: 3}
@@ -39815,16 +39815,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 354451896753165570, guid: c1d3adbe9845e7649b71a896b4c97acc,
-        type: 3}
-      propertyPath: m_Offset.x
-      value: -0.025564194
-      objectReference: {fileID: 0}
-    - target: {fileID: 354451896753165570, guid: c1d3adbe9845e7649b71a896b4c97acc,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 0.88887024
-      objectReference: {fileID: 0}
     - target: {fileID: 1333691373, guid: c1d3adbe9845e7649b71a896b4c97acc, type: 3}
       propertyPath: playerPosition.x
       value: 0.36
@@ -39833,11 +39823,8 @@ PrefabInstance:
       propertyPath: playerPosition.y
       value: -3.87
       objectReference: {fileID: 0}
-    - target: {fileID: 1333691373, guid: c1d3adbe9845e7649b71a896b4c97acc, type: 3}
-      propertyPath: sceneToLoad
-      value: HouseInterior
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3680129523917828714, guid: c1d3adbe9845e7649b71a896b4c97acc, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c1d3adbe9845e7649b71a896b4c97acc, type: 3}
 --- !u!1001 &334701821
 PrefabInstance:
@@ -44047,12 +44034,12 @@ PrefabInstance:
     - target: {fileID: 3484929598917787815, guid: f11d334f25f623046ba4a60495ae4479,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -11.52
+      value: -11.64
       objectReference: {fileID: 0}
     - target: {fileID: 3484929598917787815, guid: f11d334f25f623046ba4a60495ae4479,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.98
+      value: -5.52
       objectReference: {fileID: 0}
     - target: {fileID: 3484929598917787815, guid: f11d334f25f623046ba4a60495ae4479,
         type: 3}
