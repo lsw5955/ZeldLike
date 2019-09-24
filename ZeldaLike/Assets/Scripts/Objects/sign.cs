@@ -3,14 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class sign : MonoBehaviour
+public class sign : Interactable
 {
     public GameObject dialogBox;
     public Text dialogTxt;
     public string dialog;
-    public bool playerInRange;
-    public Signaler contextClueOn;
-    public Signaler contextClueOff;
 
     // Update is called once per frame
     void Update()
@@ -28,20 +25,11 @@ public class sign : MonoBehaviour
             }
         }        
     }
-
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if(other.CompareTag("Player"))
-        {
-            contextClueOn.Raise();
-            playerInRange = true;
-        }
-    }
-
     private void OnTriggerExit2D(Collider2D other)
     {
-        if(other.CompareTag("Player"))
+        if (other.CompareTag("Player") && !other.isTrigger)
         {
+            context.Raise();
             playerInRange = false;
             dialogBox.SetActive(false);
         }

@@ -153,6 +153,7 @@ MonoBehaviour:
   currentHealth: {fileID: 11400000, guid: 3b8a755ae2cecf947ba7f1ca66cd904c, type: 2}
   PlayerHealthSignaler: {fileID: 11400000, guid: 8bd7612a531f62b459a999b0f7db6d78,
     type: 2}
+  startPosition: {fileID: 0}
 --- !u!95 &3484929598917787811
 Animator:
   serializedVersion: 3
