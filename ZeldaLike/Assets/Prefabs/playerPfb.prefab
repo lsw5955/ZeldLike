@@ -75,7 +75,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1477535507
-  m_SortingLayer: 4
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 7152930139536384079, guid: 1ea59a5afc241924dbd15fc7742641df,
     type: 3}
@@ -154,6 +154,8 @@ MonoBehaviour:
   PlayerHealthSignaler: {fileID: 11400000, guid: 8bd7612a531f62b459a999b0f7db6d78,
     type: 2}
   startPosition: {fileID: 0}
+  playerInventory: {fileID: 0}
+  receivedItemSprite: {fileID: 0}
 --- !u!95 &3484929598917787811
 Animator:
   serializedVersion: 3

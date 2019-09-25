@@ -22,6 +22,7 @@ public class Interactable : MonoBehaviour
     {
         if (other.CompareTag("Player") && !other.isTrigger)
         {
+            Debug.Log("退出了饿啊 我是" + other);
             context.Raise();
             playerInRange = false;
         }

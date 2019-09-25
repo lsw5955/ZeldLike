@@ -23,6 +23,7 @@ public class Signaler : ScriptableObject
 
     public void DeRegisterListner(SignalListener listener)
     {
+        Debug.Log("啊!! 我" + this + "跪了");
         listeners.Remove(listener);
     }
 }

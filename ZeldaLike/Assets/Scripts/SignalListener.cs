@@ -15,12 +15,13 @@ public class SignalListener : MonoBehaviour
 
     private void OnEnable()
     {
-        Debug.Log("我开始注册到Signal");
+        //Debug.Log("我开始注册到Signal");
         signal.RegisterListner(this);
     }
 
     private void OnDisable()
     {
+        Debug.Log("额啊 我" + this + "跪了");
         signal.DeRegisterListner(this);
     }
 }
