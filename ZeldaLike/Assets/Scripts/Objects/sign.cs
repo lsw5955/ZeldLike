@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class sign : Interactable
 {
     public GameObject dialogBox;
-    public Text dialogTxt;
+    public Text dialogText;
     public string dialog;
 
     // Update is called once per frame
@@ -21,7 +21,7 @@ public class sign : Interactable
             else
             {
                 dialogBox.SetActive(true);
-                dialogTxt.text = dialog; 
+                dialogText.text = dialog; 
             }
         }        
     }
