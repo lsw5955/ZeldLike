@@ -17,10 +17,12 @@ public class Log : Enemy
     {
         currentState = EnemyState.idle;
         myRigibody = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
         target = GameObject.FindWithTag("Player").transform;
+        anim.SetBool("wakeup",true);
     }
     
-    private void changeAnim(Vector2 direction)
+    public void changeAnim(Vector2 direction)
     {
         if(Mathf.Abs(direction.x) > Mathf.Abs(direction.y))
         {
@@ -52,7 +54,7 @@ public class Log : Enemy
         CheckDistance();
     }
 
-    void CheckDistance()
+    public virtual void CheckDistance()
     {
         //Debug.Log("监测距离 : " + Vector3.Distance(target.position, transform.position));
         if(Vector3.Distance(target.position,transform.position) <= chaseRaidus && Vector3.Distance(target.position, transform.position) >= attackRaidus)
