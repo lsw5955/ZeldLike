@@ -44860,6 +44860,12 @@ MonoBehaviour:
   attackRaidus: 1
   homePosition: {fileID: 0}
   anim: {fileID: 8010221119840761208}
+  path:
+  - {fileID: 1436822685}
+  - {fileID: 1036179184}
+  currentPoint: 0
+  currentGoal: {fileID: 0}
+  roundingDistance: 0
 --- !u!95 &8010221119840761208 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 5220447061997537404, guid: 70c05944faa0d2b478bee006323846a5,
