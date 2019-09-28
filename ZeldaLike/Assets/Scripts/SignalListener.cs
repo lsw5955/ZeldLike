@@ -21,7 +21,7 @@ public class SignalListener : MonoBehaviour
 
     private void OnDisable()
     {
-        Debug.Log("额啊 我" + this + "跪了");
+        //Debug.Log("额啊 我" + this + "跪了");
         signal.DeRegisterListner(this);
     }
 }
