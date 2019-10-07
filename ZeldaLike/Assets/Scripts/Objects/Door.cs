@@ -38,6 +38,7 @@ public class Door : Interactable
     {
         doorSprite.enabled = false;
         physicsCollider.enabled = false;
+        GetComponent<Collider2D>().enabled = false;
         open = true;
     }
 

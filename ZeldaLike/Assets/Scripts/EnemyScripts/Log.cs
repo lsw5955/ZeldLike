@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Log : Enemy
 {
-    public Rigidbody2D myRigibody;
+    protected Rigidbody2D myRigibody;
 
     public Transform target;
     public float chaseRaidus;

@@ -541,6 +541,7 @@ MonoBehaviour:
   smoother: 0.05
   maxPosition: {x: -10, y: -6}
   minPosition: {x: -16, y: -16}
+  anim: {fileID: 0}
 --- !u!1001 &753887634
 PrefabInstance:
   m_ObjectHideFlags: 0

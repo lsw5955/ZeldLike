@@ -24,6 +24,8 @@ public class PlayerMovement : MonoBehaviour
     public Inventory playerInventory;
     public SpriteRenderer receivedItemSprite;
 
+    public Signaler playerHit;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -116,6 +118,9 @@ public class PlayerMovement : MonoBehaviour
 
         PlayerHealthSignaler.Raise();
         //Debug.Log("进入PlayerMovement内的Knock方法,  currentHealth.runtimeValue : " + currentHealth.runtimeValue);
+
+        playerHit.Raise();
+
         if (currentHealth.runtimeValue > 0)
         {
             //Debug.Log("启动玩家生命信号");

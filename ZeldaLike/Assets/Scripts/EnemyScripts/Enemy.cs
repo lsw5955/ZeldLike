@@ -12,13 +12,19 @@ public enum EnemyState
 
 public class Enemy : MonoBehaviour
 {
-
+    [Header("State Machine")]
     public EnemyState currentState;
+
+    [Header("Enemy Stats")]
     public string enemyName;
     public FloatValue maxHealth;
     public float health;
     public int baseAttack;
     public float moveSpeed;
+
+    [Header("Death Effect")]
+    public GameObject deathEffect;
+    private float deathEffectDelay = 1f;
 
     private void Awake()
     {
@@ -36,6 +42,7 @@ public class Enemy : MonoBehaviour
         health -= damage;
         if(health <= 0)
         {
+            DeathEffect();
             gameObject.SetActive(false);
         }
     }
@@ -51,6 +58,15 @@ public class Enemy : MonoBehaviour
             log.moveSpeed = enemyMoveSpeed;
             *end 自己加的 模拟log击退后再回来*/
             //enemy.isKinematic = true;
+        }
+    }
+
+    private void DeathEffect()
+    {
+        if(deathEffect != null)
+        {
+            GameObject effect = GameObject.Instantiate(deathEffect, transform.position, Quaternion.identity);
+            Destroy(effect, deathEffectDelay);
         }
     }
 }
