@@ -542,6 +542,8 @@ MonoBehaviour:
   maxPosition: {x: -10, y: -6}
   minPosition: {x: -16, y: -16}
   anim: {fileID: 0}
+  camMin: {fileID: 11400000, guid: b40dd6428ded5c14d97d03f2e98d65a3, type: 2}
+  camMax: {fileID: 11400000, guid: a469e55671d5d1c4ebbbad82339ac2cd, type: 2}
 --- !u!1001 &753887634
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -615,11 +617,37 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1333691373, guid: c1d3adbe9845e7649b71a896b4c97acc, type: 3}
       propertyPath: playerPosition.x
-      value: -14.54
+      value: -22
       objectReference: {fileID: 0}
     - target: {fileID: 1333691373, guid: c1d3adbe9845e7649b71a896b4c97acc, type: 3}
       propertyPath: playerPosition.y
-      value: -9.25
+      value: -8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1333691373, guid: c1d3adbe9845e7649b71a896b4c97acc, type: 3}
+      propertyPath: cameraMax
+      value: 
+      objectReference: {fileID: 11400000, guid: 343e65d59753a1d42a499a95b90d655d,
+        type: 2}
+    - target: {fileID: 1333691373, guid: c1d3adbe9845e7649b71a896b4c97acc, type: 3}
+      propertyPath: cameraMin
+      value: 
+      objectReference: {fileID: 11400000, guid: f14303d589726cc4e88271742a24b490,
+        type: 2}
+    - target: {fileID: 1333691373, guid: c1d3adbe9845e7649b71a896b4c97acc, type: 3}
+      propertyPath: cameraNewMin.x
+      value: -37
+      objectReference: {fileID: 0}
+    - target: {fileID: 1333691373, guid: c1d3adbe9845e7649b71a896b4c97acc, type: 3}
+      propertyPath: cameraNewMax.x
+      value: -26
+      objectReference: {fileID: 0}
+    - target: {fileID: 1333691373, guid: c1d3adbe9845e7649b71a896b4c97acc, type: 3}
+      propertyPath: cameraNewMax.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1333691373, guid: c1d3adbe9845e7649b71a896b4c97acc, type: 3}
+      propertyPath: cameraNewMin.y
+      value: -12
       objectReference: {fileID: 0}
     - target: {fileID: 354451896753165570, guid: c1d3adbe9845e7649b71a896b4c97acc,
         type: 3}
