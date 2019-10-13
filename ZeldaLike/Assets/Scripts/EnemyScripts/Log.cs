@@ -4,12 +4,15 @@ using UnityEngine;
 
 public class Log : Enemy
 {
-    protected Rigidbody2D myRigibody;
+    public Rigidbody2D myRigibody;
 
+    [Header("Target variables")]
     public Transform target;
     public float chaseRaidus;
     public float attackRaidus;
     public Transform homePosition;
+
+    [Header("Animation")]
     public Animator anim;
 
     // Start is called before the first frame update
@@ -77,7 +80,7 @@ public class Log : Enemy
         }
     }
 
-    private void ChangerState(EnemyState newState)
+    public void ChangerState(EnemyState newState)
     {
         if(currentState != newState)
         {

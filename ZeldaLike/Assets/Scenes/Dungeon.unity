@@ -617,11 +617,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1333691373, guid: c1d3adbe9845e7649b71a896b4c97acc, type: 3}
       propertyPath: playerPosition.x
-      value: -22
+      value: -30
       objectReference: {fileID: 0}
     - target: {fileID: 1333691373, guid: c1d3adbe9845e7649b71a896b4c97acc, type: 3}
       propertyPath: playerPosition.y
-      value: -8
+      value: -4
       objectReference: {fileID: 0}
     - target: {fileID: 1333691373, guid: c1d3adbe9845e7649b71a896b4c97acc, type: 3}
       propertyPath: cameraMax
@@ -635,19 +635,19 @@ PrefabInstance:
         type: 2}
     - target: {fileID: 1333691373, guid: c1d3adbe9845e7649b71a896b4c97acc, type: 3}
       propertyPath: cameraNewMin.x
-      value: -37
+      value: -35
       objectReference: {fileID: 0}
     - target: {fileID: 1333691373, guid: c1d3adbe9845e7649b71a896b4c97acc, type: 3}
       propertyPath: cameraNewMax.x
-      value: -26
+      value: -27
       objectReference: {fileID: 0}
     - target: {fileID: 1333691373, guid: c1d3adbe9845e7649b71a896b4c97acc, type: 3}
       propertyPath: cameraNewMax.y
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1333691373, guid: c1d3adbe9845e7649b71a896b4c97acc, type: 3}
       propertyPath: cameraNewMin.y
-      value: -12
+      value: -10
       objectReference: {fileID: 0}
     - target: {fileID: 354451896753165570, guid: c1d3adbe9845e7649b71a896b4c97acc,
         type: 3}

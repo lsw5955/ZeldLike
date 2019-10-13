@@ -5,17 +5,26 @@ using UnityEngine.UI;
 
 public class TreasureChest : Interactable
 {
+    [Header("Content")]
     public Item contents;
     public Inventory playerInventory;
     public bool isOpen;
+    public BoolValue storedOpen;
+
+    [Header("Signal and Dialog")]
     public Signaler raiseItem;
     public GameObject dialogBox;
     public Text dialogText;
+
+    [Header("Animation")]
     private Animator anim;
 
     private void Start()
     {
         anim = GetComponent<Animator>();
+        isOpen = storedOpen.initialValue;
+        Debug.Log("我是" + isOpen);
+        anim.SetBool("opened", isOpen);
     }
 
     void Update()
@@ -48,8 +57,8 @@ public class TreasureChest : Interactable
         context.Raise();
         //set the chest to opened
         isOpen = true;
-
-        anim.SetBool("opened", true);
+        storedOpen.initialValue = isOpen;
+        anim.SetBool("opened", isOpen);
     }
 
     public void ChestAlreadyOpen()
@@ -64,7 +73,7 @@ public class TreasureChest : Interactable
     {
         if (other.CompareTag("Player") && !other.isTrigger && !isOpen)
         {
-            Debug.Log("进入了饿啊 我是" + other);
+            //Debug.Log("进入了饿啊 我是" + other);
             context.Raise();
             playerInRange = true;
         }
@@ -74,7 +83,7 @@ public class TreasureChest : Interactable
     {
         if (other.CompareTag("Player") && !other.isTrigger && !isOpen)
         {
-            Debug.Log("退出了饿啊 我是" + other);
+            //Debug.Log("退出了饿啊 我是" + other);
             context.Raise();
             playerInRange = false;
         }
