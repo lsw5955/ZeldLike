@@ -34,7 +34,7 @@ public class Door : Interactable
         }
     }
 
-    void Open()
+    public void Open()
     {
         doorSprite.enabled = false;
         physicsCollider.enabled = false;

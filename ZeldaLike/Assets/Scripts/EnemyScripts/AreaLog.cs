@@ -9,7 +9,7 @@ public class AreaLog : Log
     public override void CheckDistance()
     {
 
-        Debug.Log("进入领域 : " + boundary.bounds.Contains(target.transform.position));
+        //Debug.Log("进入领域 : " + boundary.bounds.Contains(target.transform.position));
         if (Vector3.Distance(target.position, transform.position) <= chaseRaidus && Vector3.Distance(target.position, transform.position) >= attackRaidus && boundary.bounds.Contains(target.transform.position))
         {
             

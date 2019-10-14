@@ -10,8 +10,10 @@ public class ContextClue : MonoBehaviour
     public void changeContext()
     {
         contextActive = !contextActive;
+        Debug.Log("执行进来了, 有信号");
         if(contextActive)
         {
+            Debug.Log("我设置true了啊");
             contextClue.SetActive(true);
         }
         else

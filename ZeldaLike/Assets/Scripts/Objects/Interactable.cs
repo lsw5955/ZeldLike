@@ -12,7 +12,7 @@ public class Interactable : MonoBehaviour
     {
         if (other.CompareTag("Player") && !other.isTrigger)
         {
-            Debug.Log("进入了饿啊 我是" + other);
+            Debug.Log("进入了饿啊 我碰到了" + other + ", 它" + other.transform.position);
             context.Raise();
             playerInRange = true;
         }
