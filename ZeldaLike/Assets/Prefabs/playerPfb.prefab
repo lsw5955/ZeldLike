@@ -220,7 +220,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1659729991
-  m_SortingLayer: 4
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 8387997009269029421, guid: beaa0a3b317a3384492231211a1a3112,
     type: 3}
@@ -301,7 +301,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1659729991
-  m_SortingLayer: 4
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -422,7 +422,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1477535507
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 7152930139536384079, guid: 1ea59a5afc241924dbd15fc7742641df,
     type: 3}
@@ -503,6 +503,7 @@ MonoBehaviour:
   startPosition: {fileID: 11400000, guid: 2b39298b5ac09bd4eadad9a4e719c31b, type: 2}
   playerInventory: {fileID: 11400000, guid: 235a2218ee2826b479b0097c0cc28b0a, type: 2}
   receivedItemSprite: {fileID: 6289642397964902209}
+  playerHit: {fileID: 0}
 --- !u!95 &6692937251591558718
 Animator:
   serializedVersion: 3

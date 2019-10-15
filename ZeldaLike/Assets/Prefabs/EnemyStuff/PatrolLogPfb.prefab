@@ -212,6 +212,7 @@ MonoBehaviour:
   baseAttack: 1
   moveSpeed: 2
   deathEffect: {fileID: 0}
+  myRigibody: {fileID: 0}
   target: {fileID: 0}
   chaseRaidus: 3
   attackRaidus: 1
