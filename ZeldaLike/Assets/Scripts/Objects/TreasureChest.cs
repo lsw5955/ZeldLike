@@ -23,7 +23,7 @@ public class TreasureChest : Interactable
     {
         anim = GetComponent<Animator>();
         isOpen = storedOpen.initialValue;
-        Debug.Log("我是" + isOpen);
+        //Debug.Log("我是" + isOpen);
         anim.SetBool("opened", isOpen);
     }
 

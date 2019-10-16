@@ -10,7 +10,6 @@ public class Log : Enemy
     public Transform target;
     public float chaseRaidus;
     public float attackRaidus;
-    public Transform homePosition;
 
     [Header("Animation")]
     public Animator anim;

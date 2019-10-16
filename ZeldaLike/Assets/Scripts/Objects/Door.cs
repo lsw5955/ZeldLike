@@ -42,7 +42,7 @@ public class Door : Interactable
         open = true;
     }
 
-    void Close()
+    public void Close()
     {
 
     }

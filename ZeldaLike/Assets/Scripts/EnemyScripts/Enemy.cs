@@ -21,6 +21,7 @@ public class Enemy : MonoBehaviour
     public float health;
     public int baseAttack;
     public float moveSpeed;
+    public Vector2 homePosition;
 
     [Header("Death Effect")]
     public GameObject deathEffect;
@@ -29,6 +30,11 @@ public class Enemy : MonoBehaviour
     private void Awake()
     {
         health = maxHealth.initialValue;
+    }
+
+    private void OnEnable()
+    {
+        transform.position = homePosition;
     }
 
     public void Knock(Rigidbody2D myRigidbody, float knockTime,float damage)
