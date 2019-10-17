@@ -5,7 +5,6 @@ using UnityEngine;
 public class DungeonEnemyRoom : DungeonRoom
 {
     public Door[] doors;
-    public SignalListener enemyUpdate;
 
     public void CloseDoors()
     {
@@ -31,9 +30,9 @@ public class DungeonEnemyRoom : DungeonRoom
             {
                 return;
             }
-
-            OpenDoors();
         }
+
+        OpenDoors();
     }
 
 

@@ -4553,6 +4553,12 @@ PrefabInstance:
       propertyPath: contextActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7428047043137692553, guid: 678e3070a139bdf4d9d0a3949b03e236,
+        type: 3}
+      propertyPath: playerHit
+      value: 
+      objectReference: {fileID: 11400000, guid: 192a2ee8836ba1f42b169da8f6af5cf3,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 678e3070a139bdf4d9d0a3949b03e236, type: 3}
 --- !u!4 &1140504793 stripped
@@ -4702,9 +4708,10 @@ MonoBehaviour:
   health: 2
   baseAttack: 1
   moveSpeed: 1.5
-  homePosition: {x: -7.62, y: -8.85}
+  homePosition: {x: -19.8, y: 5.6}
   deathEffect: {fileID: 8553397508527310878, guid: 3ef9daa5f60cd674eac057f2c28ba722,
     type: 3}
+  roomSignal: {fileID: 11400000, guid: 60e211814f5f5e64689d87750b34843b, type: 2}
   myRigibody: {fileID: 0}
   target: {fileID: 0}
   chaseRaidus: 4
@@ -12345,7 +12352,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerInRange: 0
   context: {fileID: 11400000, guid: 300bd3c5159d65b4db30308eb9d95ff9, type: 2}
-  thisDoorType: 0
+  thisDoorType: 1
   open: 0
   playerInventory: {fileID: 11400000, guid: 235a2218ee2826b479b0097c0cc28b0a, type: 2}
   doorSprite: {fileID: 89090711850391439}
@@ -12819,9 +12826,10 @@ MonoBehaviour:
   health: 2
   baseAttack: 1
   moveSpeed: 1.5
-  homePosition: {x: -7.62, y: -8.85}
+  homePosition: {x: -9.2, y: 10.8}
   deathEffect: {fileID: 8553397508527310878, guid: 3ef9daa5f60cd674eac057f2c28ba722,
     type: 3}
+  roomSignal: {fileID: 11400000, guid: 60e211814f5f5e64689d87750b34843b, type: 2}
   myRigibody: {fileID: 0}
   target: {fileID: 0}
   chaseRaidus: 4
@@ -12986,6 +12994,7 @@ GameObject:
   - component: {fileID: 8628476336825565276}
   - component: {fileID: 8628476336825565267}
   - component: {fileID: 8628476336825565278}
+  - component: {fileID: 8628476336825565279}
   m_Layer: 0
   m_Name: Room1
   m_TagString: Untagged
@@ -13011,4 +13020,32 @@ MonoBehaviour:
   pots: []
   doors:
   - {fileID: 89090711142392380}
-  enemyUpdate: {fileID: 0}
+--- !u!114 &8628476336825565279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8628476336825565277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fb43da84e782d944adca7960f231080, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  signal: {fileID: 11400000, guid: 60e211814f5f5e64689d87750b34843b, type: 2}
+  signalEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8628476336825565278}
+        m_MethodName: CheckEnemies
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
