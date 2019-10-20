@@ -49,9 +49,11 @@ public class DungeonEnemyRoom : DungeonRoom
             {
                 ChangeActivation(p, true);
             }
+
+            virtualCamera.SetActive(true);
         }
 
-        CloseDoors(); 
+        CloseDoors();
     }
 
     public override void OnTriggerExit2D(Collider2D other)
@@ -67,6 +69,8 @@ public class DungeonEnemyRoom : DungeonRoom
             {
                 ChangeActivation(p, false);
             }
+
+            virtualCamera.SetActive(false);
         }
     }
 }
