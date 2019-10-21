@@ -42,7 +42,7 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: 81469675ac5acc74e814aed6ac3de296, type: 3}
-    totalSpriteSurfaceArea: 592761
+    totalSpriteSurfaceArea: 605002
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
@@ -1567,6 +1567,7 @@ SpriteAtlas:
   - {fileID: -7597207668663345718, guid: b4ed4f273b99f8a44a0a68932c69440b, type: 3}
   - {fileID: 6119314509959758635, guid: b4ed4f273b99f8a44a0a68932c69440b, type: 3}
   - {fileID: 8627847960000431974, guid: b4ed4f273b99f8a44a0a68932c69440b, type: 3}
+  - {fileID: 21300000, guid: 8c7e3b87f94020c43904277179e19eea, type: 3}
   - {fileID: -790699523677361007, guid: 1ea59a5afc241924dbd15fc7742641df, type: 3}
   - {fileID: 8470420716495695676, guid: 1ea59a5afc241924dbd15fc7742641df, type: 3}
   - {fileID: 6167071470516247665, guid: 1ea59a5afc241924dbd15fc7742641df, type: 3}
@@ -1694,10 +1695,14 @@ SpriteAtlas:
   - {fileID: -93750458980389090, guid: beaa0a3b317a3384492231211a1a3112, type: 3}
   - {fileID: -7946122169745577622, guid: beaa0a3b317a3384492231211a1a3112, type: 3}
   - {fileID: -7079720951457237320, guid: beaa0a3b317a3384492231211a1a3112, type: 3}
+  - {fileID: 1529650774630179173, guid: beaa0a3b317a3384492231211a1a3112, type: 3}
   - {fileID: -8894351329827163213, guid: beaa0a3b317a3384492231211a1a3112, type: 3}
+  - {fileID: 4571676322455285884, guid: beaa0a3b317a3384492231211a1a3112, type: 3}
   - {fileID: 2654447934904345190, guid: beaa0a3b317a3384492231211a1a3112, type: 3}
+  - {fileID: 5513264443485517607, guid: beaa0a3b317a3384492231211a1a3112, type: 3}
   - {fileID: -3276687688264177478, guid: beaa0a3b317a3384492231211a1a3112, type: 3}
   - {fileID: 5069650035751226587, guid: beaa0a3b317a3384492231211a1a3112, type: 3}
+  - {fileID: -3555468057966329373, guid: beaa0a3b317a3384492231211a1a3112, type: 3}
   - {fileID: -9053378900703536071, guid: beaa0a3b317a3384492231211a1a3112, type: 3}
   - {fileID: 1753205982242350755, guid: beaa0a3b317a3384492231211a1a3112, type: 3}
   - {fileID: 318953615281452700, guid: beaa0a3b317a3384492231211a1a3112, type: 3}
@@ -1771,17 +1776,13 @@ SpriteAtlas:
   - {fileID: 4546686275956030081, guid: beaa0a3b317a3384492231211a1a3112, type: 3}
   - {fileID: 3260465681249809347, guid: beaa0a3b317a3384492231211a1a3112, type: 3}
   - {fileID: -108185186312894436, guid: beaa0a3b317a3384492231211a1a3112, type: 3}
-  - {fileID: 1529650774630179173, guid: beaa0a3b317a3384492231211a1a3112, type: 3}
   - {fileID: 2346192434483656938, guid: beaa0a3b317a3384492231211a1a3112, type: 3}
   - {fileID: -2955328036293922735, guid: beaa0a3b317a3384492231211a1a3112, type: 3}
   - {fileID: 6974221507388985145, guid: beaa0a3b317a3384492231211a1a3112, type: 3}
   - {fileID: 351992477344869309, guid: beaa0a3b317a3384492231211a1a3112, type: 3}
   - {fileID: 2487486484330169583, guid: beaa0a3b317a3384492231211a1a3112, type: 3}
-  - {fileID: -3555468057966329373, guid: beaa0a3b317a3384492231211a1a3112, type: 3}
   - {fileID: 8387997009269029421, guid: beaa0a3b317a3384492231211a1a3112, type: 3}
-  - {fileID: 5513264443485517607, guid: beaa0a3b317a3384492231211a1a3112, type: 3}
   - {fileID: -595281427602211305, guid: beaa0a3b317a3384492231211a1a3112, type: 3}
-  - {fileID: 4571676322455285884, guid: beaa0a3b317a3384492231211a1a3112, type: 3}
   - {fileID: 538826285080647454, guid: beaa0a3b317a3384492231211a1a3112, type: 3}
   - {fileID: -2639854583086408205, guid: beaa0a3b317a3384492231211a1a3112, type: 3}
   - {fileID: 1107736971085435061, guid: beaa0a3b317a3384492231211a1a3112, type: 3}
@@ -3335,6 +3336,7 @@ SpriteAtlas:
   - orge_6
   - orge_9
   - orge_8
+  - backGround
   - character_14
   - character_15
   - character_16
@@ -3462,10 +3464,14 @@ SpriteAtlas:
   - objects_9
   - objects_91
   - objects_61
+  - heartUp4
   - objects_90
+  - heartUp2
   - objects_4
+  - heartUp3
   - objects_5
   - objects_6
+  - heartUp1
   - objects_7
   - objects_0
   - objects_1
@@ -3539,17 +3545,13 @@ SpriteAtlas:
   - objects_111
   - objects_105
   - objects_116
-  - objects_104
   - objects_117
   - objects_107
   - objects_114
   - objects_106
   - objects_115
-  - objects_101
   - objects_100
-  - objects_103
   - objects_118
-  - objects_102
   - objects_119
   - switchDown
   - objects_109

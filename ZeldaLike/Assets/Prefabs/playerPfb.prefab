@@ -500,6 +500,7 @@ MonoBehaviour:
   currentHealth: {fileID: 11400000, guid: 3b8a755ae2cecf947ba7f1ca66cd904c, type: 2}
   PlayerHealthSignaler: {fileID: 11400000, guid: 8bd7612a531f62b459a999b0f7db6d78,
     type: 2}
+  reduceMagic: {fileID: 0}
   startPosition: {fileID: 11400000, guid: 2b39298b5ac09bd4eadad9a4e719c31b, type: 2}
   playerInventory: {fileID: 11400000, guid: 235a2218ee2826b479b0097c0cc28b0a, type: 2}
   receivedItemSprite: {fileID: 6289642397964902209}

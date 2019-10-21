@@ -21,7 +21,7 @@ public class MagicPowerup : Powerup
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.CompareTag("Player"))
+        if(other.CompareTag("Player") && !other.isTrigger)
         {
             playerInventory.currentMagic += magicValue;
             if(playerInventory.currentMagic > playerInventory.maxMagic)

@@ -24,9 +24,13 @@ public class PlayerMovement : MonoBehaviour
     public VectorValue startPosition;
     public Inventory playerInventory;
     public SpriteRenderer receivedItemSprite;
-    public GameObject projectile;
 
     public Signaler playerHit;
+
+    [Header("Projectile stuff")]
+    public GameObject projectile;
+    public Item bow;
+
 
     // Start is called before the first frame update
     void Start()
@@ -56,7 +60,14 @@ public class PlayerMovement : MonoBehaviour
         }
         else if (Input.GetButtonDown("SecondWeapon") && currentState != PlayerState.attack && currentState != PlayerState.stagger)
         {
-            StartCoroutine(SecondAttackCo());
+            if(playerInventory.CheckItem(bow))
+            {
+                StartCoroutine(SecondAttackCo());
+            }
+            else
+            {
+                Debug.Log("我没有金刚钻 我不拦瓷器活");
+            }
             //Debug.Log("moveX: " + animator.GetFloat("moveX") + "|| moveY: " + animator.GetFloat("moveY"));
         }
         else if (currentState == PlayerState.walk || currentState == PlayerState.idle)

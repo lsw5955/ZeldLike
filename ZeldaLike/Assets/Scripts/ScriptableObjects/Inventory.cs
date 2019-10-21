@@ -12,6 +12,16 @@ public class Inventory : ScriptableObject
     public float maxMagic = 10;
     public float currentMagic;
 
+    public bool CheckItem(Item item)
+    {
+        if(items.Contains(item))
+        {
+            return true;
+        }
+
+        return false;
+    }
+
     private void OnEnable()
     {
         currentMagic = maxMagic;

@@ -307,16 +307,16 @@ TextureImporter:
     second: objects_100
   - first:
       213: -3555468057966329373
-    second: objects_101
+    second: heartUp1
   - first:
       213: 4571676322455285884
-    second: objects_102
+    second: heartUp2
   - first:
       213: 5513264443485517607
-    second: objects_103
+    second: heartUp3
   - first:
       213: 1529650774630179173
-    second: objects_104
+    second: heartUp4
   - first:
       213: 3260465681249809347
     second: objects_105
@@ -2673,7 +2673,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: objects_101
+      name: heartUp1
       rect:
         serializedVersion: 2
         x: 66
@@ -2694,12 +2694,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: objects_102
+      name: heartUp2
       rect:
         serializedVersion: 2
-        x: 83
+        x: 82
         y: 177
-        width: 11
+        width: 12
         height: 12
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -2715,12 +2715,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: objects_103
+      name: heartUp3
       rect:
         serializedVersion: 2
-        x: 100
+        x: 98
         y: 177
-        width: 10
+        width: 12
         height: 12
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -2736,12 +2736,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: objects_104
+      name: heartUp4
       rect:
         serializedVersion: 2
-        x: 115
+        x: 114
         y: 177
-        width: 11
+        width: 12
         height: 12
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
