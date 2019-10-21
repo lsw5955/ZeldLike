@@ -503,6 +503,7 @@ MonoBehaviour:
   startPosition: {fileID: 11400000, guid: 2b39298b5ac09bd4eadad9a4e719c31b, type: 2}
   playerInventory: {fileID: 11400000, guid: 235a2218ee2826b479b0097c0cc28b0a, type: 2}
   receivedItemSprite: {fileID: 6289642397964902209}
+  projectile: {fileID: 0}
   playerHit: {fileID: 0}
 --- !u!95 &6692937251591558718
 Animator:

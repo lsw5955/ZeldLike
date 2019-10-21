@@ -6,8 +6,16 @@ public class Arrow : MonoBehaviour
 {
     public float speed;
     public Rigidbody2D myRigidbody;
+    public float lifeTime;
+    private float lifeTimeCounter;
+    public float magicCost;
 
     private Vector3 startPosition;
+
+    private void Start()
+    {
+        lifeTimeCounter = lifeTime;
+    }
 
     public void Setup(Vector2 velocity, Vector3 direction)
     {
@@ -18,7 +26,9 @@ public class Arrow : MonoBehaviour
 
     private void Update()
     {
-        if((startPosition - transform.position).magnitude > 5)
+        lifeTimeCounter -= Time.deltaTime;
+
+        if(lifeTimeCounter <= 0)
         {
             Destroy(this.gameObject);
         }

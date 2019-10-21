@@ -211,12 +211,14 @@ MonoBehaviour:
   health: 0
   baseAttack: 1
   moveSpeed: 2
+  homePosition: {x: 0, y: 0}
   deathEffect: {fileID: 0}
+  thisLoot: {fileID: 0}
+  roomSignal: {fileID: 0}
   myRigibody: {fileID: 0}
   target: {fileID: 0}
   chaseRaidus: 3
   attackRaidus: 1
-  homePosition: {fileID: 0}
   anim: {fileID: 5220447061997537404}
   path:
   - {fileID: 0}

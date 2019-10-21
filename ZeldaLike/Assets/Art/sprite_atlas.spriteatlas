@@ -42,7 +42,7 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: 81469675ac5acc74e814aed6ac3de296, type: 3}
-    totalSpriteSurfaceArea: 592249
+    totalSpriteSurfaceArea: 592761
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
@@ -1810,7 +1810,9 @@ SpriteAtlas:
   - {fileID: 5566842953363755866, guid: 0821dd9c54ba97444959e7c9871eb404, type: 3}
   - {fileID: -7445369939883215787, guid: 0821dd9c54ba97444959e7c9871eb404, type: 3}
   - {fileID: 21300000, guid: 1775d7ec4bfa637418a8d1b57857abfe, type: 3}
+  - {fileID: 21300000, guid: b695ca0d926cd724b8632250482dd4ec, type: 3}
   - {fileID: 21300000, guid: 69818e9f854b3804583e2de1de4de004, type: 3}
+  - {fileID: 21300000, guid: 4de137dfefb210d4ebad54bd43bfd6a2, type: 3}
   m_PackedSpriteNamesToIndex:
   - door
   - key
@@ -3576,6 +3578,8 @@ SpriteAtlas:
   - log_21
   - log_22
   - arrow
+  - magic bar
   - NPC_test
+  - magic bottle
   m_Tag: sprite_atlas
   m_IsVariant: 0

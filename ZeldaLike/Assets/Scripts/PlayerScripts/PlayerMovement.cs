@@ -20,6 +20,7 @@ public class PlayerMovement : MonoBehaviour
     private Animator animator;
     public FloatValue currentHealth;
     public Signaler PlayerHealthSignaler;
+    public Signaler reduceMagic;
     public VectorValue startPosition;
     public Inventory playerInventory;
     public SpriteRenderer receivedItemSprite;
@@ -99,8 +100,13 @@ public class PlayerMovement : MonoBehaviour
 
     private void MakeArrow()
     {
-        Arrow arrow = Instantiate(projectile,transform.position,Quaternion.identity).GetComponent<Arrow>();
-        arrow.Setup(new Vector2(animator.GetFloat("moveX"), animator.GetFloat("moveY")), getRotation());
+        if (playerInventory.currentMagic >= projectile.GetComponent<Arrow>().magicCost)
+        {
+            Arrow arrow = Instantiate(projectile, transform.position, Quaternion.identity).GetComponent<Arrow>();
+            arrow.Setup(new Vector2(animator.GetFloat("moveX"), animator.GetFloat("moveY")), getRotation());
+            playerInventory.ReduceMagic(arrow.magicCost);
+            reduceMagic.Raise();
+        }
     }
 
     public void RaiseItem()

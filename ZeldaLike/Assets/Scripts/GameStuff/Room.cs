@@ -6,6 +6,7 @@ public class Room : MonoBehaviour
 {
     public Enemy[] enemies;
     public pot[] pots;
+    public MagicPowerup[] mp;
     public GameObject virtualCamera;
 
     public virtual void OnTriggerEnter2D(Collider2D other)
@@ -20,6 +21,11 @@ public class Room : MonoBehaviour
             foreach (pot p in pots)
             {
                 ChangeActivation(p, true);
+            }
+
+            foreach (MagicPowerup m in mp)
+            {
+                ChangeActivation(m, true);
             }
 
             virtualCamera.SetActive(true);
@@ -38,6 +44,11 @@ public class Room : MonoBehaviour
             foreach (pot p in pots)
             {
                 ChangeActivation(p, false);
+            }
+            
+            foreach (MagicPowerup m in mp)
+            {
+                ChangeActivation(m, false);
             }
 
             virtualCamera.SetActive(false);
