@@ -31,6 +31,31 @@ public class PlayerMovement : MonoBehaviour
     public GameObject projectile;
     public Item bow;
 
+    [Header("IFrame Stuff")]
+    public Color flashColor;
+    public Color regularColor;
+    public float flashDuration;
+    public int numberOfFlash;
+    public Collider2D triggerCollider;
+    public SpriteRenderer mySprite;
+
+    
+    private IEnumerator FlashCo()
+    {
+        int temp = 0;
+        triggerCollider.enabled = false;
+        while(temp < numberOfFlash)
+        {
+            temp++;
+            mySprite.color = flashColor;
+            yield return new WaitForSeconds(flashDuration);
+            mySprite.color = regularColor;
+            yield return new WaitForSeconds(flashDuration); 
+        }
+
+        triggerCollider.enabled = true;
+    }
+
 
     // Start is called before the first frame update
     void Start()
@@ -191,6 +216,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (myRigidbody != null )
         {
+            StartCoroutine(FlashCo());
             //Debug.Log("延迟方法执行");
             yield return new WaitForSeconds(knockTime);
             myRigidbody.velocity = Vector2.zero;
