@@ -48176,6 +48176,66 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 802c5fc622dd6fb4ba404b02ee02e23a,
         type: 2}
+    - target: {fileID: 7428047043137692553, guid: 678e3070a139bdf4d9d0a3949b03e236,
+        type: 3}
+      propertyPath: flashColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7428047043137692553, guid: 678e3070a139bdf4d9d0a3949b03e236,
+        type: 3}
+      propertyPath: flashColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7428047043137692553, guid: 678e3070a139bdf4d9d0a3949b03e236,
+        type: 3}
+      propertyPath: flashColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7428047043137692553, guid: 678e3070a139bdf4d9d0a3949b03e236,
+        type: 3}
+      propertyPath: flashColor.a
+      value: 0.46666667
+      objectReference: {fileID: 0}
+    - target: {fileID: 7428047043137692553, guid: 678e3070a139bdf4d9d0a3949b03e236,
+        type: 3}
+      propertyPath: regularColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7428047043137692553, guid: 678e3070a139bdf4d9d0a3949b03e236,
+        type: 3}
+      propertyPath: regularColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7428047043137692553, guid: 678e3070a139bdf4d9d0a3949b03e236,
+        type: 3}
+      propertyPath: regularColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7428047043137692553, guid: 678e3070a139bdf4d9d0a3949b03e236,
+        type: 3}
+      propertyPath: regularColor.a
+      value: 0.91764706
+      objectReference: {fileID: 0}
+    - target: {fileID: 7428047043137692553, guid: 678e3070a139bdf4d9d0a3949b03e236,
+        type: 3}
+      propertyPath: flashDuration
+      value: 0.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 7428047043137692553, guid: 678e3070a139bdf4d9d0a3949b03e236,
+        type: 3}
+      propertyPath: numberOfFlash
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7428047043137692553, guid: 678e3070a139bdf4d9d0a3949b03e236,
+        type: 3}
+      propertyPath: mySprite
+      value: 
+      objectReference: {fileID: 6289642396545955711}
+    - target: {fileID: 7428047043137692553, guid: 678e3070a139bdf4d9d0a3949b03e236,
+        type: 3}
+      propertyPath: triggerCollider
+      value: 
+      objectReference: {fileID: 6289642396545955707}
     - target: {fileID: 9219569860698968398, guid: 678e3070a139bdf4d9d0a3949b03e236,
         type: 3}
       propertyPath: m_Offset.y
@@ -48282,6 +48342,18 @@ MonoBehaviour:
   m_UseImpactDirection: 0
   m_ScaleImpactWithMass: 0
   m_ScaleImpactWithSpeed: 0
+--- !u!61 &6289642396545955707 stripped
+BoxCollider2D:
+  m_CorrespondingSourceObject: {fileID: 9219569860698968398, guid: 678e3070a139bdf4d9d0a3949b03e236,
+    type: 3}
+  m_PrefabInstance: {fileID: 6289642396545955701}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &6289642396545955711 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 2572765091910509051, guid: 678e3070a139bdf4d9d0a3949b03e236,
+    type: 3}
+  m_PrefabInstance: {fileID: 6289642396545955701}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8010221119840761192 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5220447061997537378, guid: 70c05944faa0d2b478bee006323846a5,
