@@ -42,11 +42,12 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: 81469675ac5acc74e814aed6ac3de296, type: 3}
-    totalSpriteSurfaceArea: 605002
+    totalSpriteSurfaceArea: 607338
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
   - {fileID: 21300000, guid: 44753cb0ea1d18e47aadbe2c14db0239, type: 3}
+  - {fileID: 21300000, guid: d61dbb513e199d840bbe51064ae9a243, type: 3}
   - {fileID: 21300000, guid: 1d0308c15d88dc24283be922f0ab8cd6, type: 3}
   - {fileID: 2313419830122661008, guid: 50e020e1929985644b51887542de6396, type: 3}
   - {fileID: 6349480184285452005, guid: 50e020e1929985644b51887542de6396, type: 3}
@@ -165,6 +166,8 @@ SpriteAtlas:
   - {fileID: -7903152263914619656, guid: 50e020e1929985644b51887542de6396, type: 3}
   - {fileID: -4978113134295867063, guid: 50e020e1929985644b51887542de6396, type: 3}
   - {fileID: 47775018648080561, guid: 50e020e1929985644b51887542de6396, type: 3}
+  - {fileID: 21300000, guid: 4fdf3832c4ef8e442a314ae7e527b9f6, type: 3}
+  - {fileID: 21300000, guid: aad6fe63d0257ae4daa2d9e03ec84a6e, type: 3}
   - {fileID: -7948550939892008119, guid: 9aa457e3247d97848bba52a6be345ce2, type: 3}
   - {fileID: -4027910256766095353, guid: 9aa457e3247d97848bba52a6be345ce2, type: 3}
   - {fileID: -3496985518704991945, guid: 9aa457e3247d97848bba52a6be345ce2, type: 3}
@@ -1568,6 +1571,8 @@ SpriteAtlas:
   - {fileID: 6119314509959758635, guid: b4ed4f273b99f8a44a0a68932c69440b, type: 3}
   - {fileID: 8627847960000431974, guid: b4ed4f273b99f8a44a0a68932c69440b, type: 3}
   - {fileID: 21300000, guid: 8c7e3b87f94020c43904277179e19eea, type: 3}
+  - {fileID: 21300000, guid: 16a1f5a75f1920246ba85a010aa49299, type: 3}
+  - {fileID: 21300000, guid: 0585a8d90706ba644af17b05d5b7cb4a, type: 3}
   - {fileID: -790699523677361007, guid: 1ea59a5afc241924dbd15fc7742641df, type: 3}
   - {fileID: 8470420716495695676, guid: 1ea59a5afc241924dbd15fc7742641df, type: 3}
   - {fileID: 6167071470516247665, guid: 1ea59a5afc241924dbd15fc7742641df, type: 3}
@@ -1812,10 +1817,26 @@ SpriteAtlas:
   - {fileID: -7445369939883215787, guid: 0821dd9c54ba97444959e7c9871eb404, type: 3}
   - {fileID: 21300000, guid: 1775d7ec4bfa637418a8d1b57857abfe, type: 3}
   - {fileID: 21300000, guid: b695ca0d926cd724b8632250482dd4ec, type: 3}
-  - {fileID: 21300000, guid: 69818e9f854b3804583e2de1de4de004, type: 3}
+  - {fileID: -1790513009360131488, guid: 69818e9f854b3804583e2de1de4de004, type: 3}
+  - {fileID: 6796940128468367395, guid: 69818e9f854b3804583e2de1de4de004, type: 3}
+  - {fileID: 7257679221847934946, guid: 69818e9f854b3804583e2de1de4de004, type: 3}
+  - {fileID: -8018767669905319889, guid: 69818e9f854b3804583e2de1de4de004, type: 3}
+  - {fileID: 3471414262902695032, guid: 69818e9f854b3804583e2de1de4de004, type: 3}
+  - {fileID: -5174125284999604879, guid: 69818e9f854b3804583e2de1de4de004, type: 3}
+  - {fileID: 4411923371137299535, guid: 69818e9f854b3804583e2de1de4de004, type: 3}
+  - {fileID: -7544729849536096197, guid: 69818e9f854b3804583e2de1de4de004, type: 3}
+  - {fileID: 109808345321430783, guid: 69818e9f854b3804583e2de1de4de004, type: 3}
+  - {fileID: -984706229473049029, guid: 69818e9f854b3804583e2de1de4de004, type: 3}
+  - {fileID: -2757298984738394219, guid: 69818e9f854b3804583e2de1de4de004, type: 3}
+  - {fileID: -3297999012176952179, guid: 69818e9f854b3804583e2de1de4de004, type: 3}
+  - {fileID: -6431366237039918707, guid: 69818e9f854b3804583e2de1de4de004, type: 3}
+  - {fileID: -8922353081226294202, guid: 69818e9f854b3804583e2de1de4de004, type: 3}
+  - {fileID: 8869442856293547957, guid: 69818e9f854b3804583e2de1de4de004, type: 3}
+  - {fileID: -1466947835845212873, guid: 69818e9f854b3804583e2de1de4de004, type: 3}
   - {fileID: 21300000, guid: 4de137dfefb210d4ebad54bd43bfd6a2, type: 3}
   m_PackedSpriteNamesToIndex:
   - door
+  - RoomBlank
   - key
   - cave_50
   - cave_51
@@ -1934,6 +1955,8 @@ SpriteAtlas:
   - cave_110
   - cave_108
   - cave_109
+  - PlayerMarker
+  - Minimap Overlay
   - character_03_9
   - character_03_8
   - character_03_1
@@ -3337,6 +3360,8 @@ SpriteAtlas:
   - orge_9
   - orge_8
   - backGround
+  - Minimap mask
+  - Square
   - character_14
   - character_15
   - character_16
@@ -3581,7 +3606,22 @@ SpriteAtlas:
   - log_22
   - arrow
   - magic bar
-  - NPC_test
+  - NPC_test_11
+  - NPC_test_10
+  - NPC_test_13
+  - NPC_test_12
+  - NPC_test_6
+  - NPC_test_7
+  - NPC_test_4
+  - NPC_test_5
+  - NPC_test_2
+  - NPC_test_3
+  - NPC_test_0
+  - NPC_test_1
+  - NPC_test_8
+  - NPC_test_9
+  - NPC_test_15
+  - NPC_test_14
   - magic bottle
   m_Tag: sprite_atlas
   m_IsVariant: 0

@@ -7,10 +7,10 @@ public class sign : Interactable
 {
     public GameObject dialogBox;
     public Text dialogText;
-    public string dialog;
+    public string dialog; 
 
     // Update is called once per frame
-    void Update()
+    protected virtual void  Update()
     {
         if(Input.GetKeyUp(KeyCode.E) && playerInRange)
         {
