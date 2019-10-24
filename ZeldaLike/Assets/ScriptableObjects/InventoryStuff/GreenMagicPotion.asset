@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c42fe8de97515e849b55705da8e6f716, type: 3}
+  m_Name: GreenMagicPotion
+  m_EditorClassIdentifier: 
+  itemName: "\u9B54\u529B\u8349\u836F"
+  itemDescription: "\u5403\u4E86\u5C31\u662F\u72E0"
+  itemImage: {fileID: 8333231276030249781, guid: beaa0a3b317a3384492231211a1a3112,
+    type: 3}
+  numberHeld: 1
+  usable: 1
+  unique: 0
+  thisEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: -257183971056522378, guid: 128190bf7341fd64c9ea4d44f0c90ed0,
+          type: 3}
+        m_MethodName: Use
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 4
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null

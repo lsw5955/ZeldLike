@@ -10,7 +10,7 @@ TextureImporter:
     second: objects_1
   - first:
       213: 8333231276030249781
-    second: objects_2
+    second: Herb
   - first:
       213: -4430392651179603617
     second: objects_3
@@ -211,7 +211,7 @@ TextureImporter:
     second: objects_68
   - first:
       213: 8531737542734488527
-    second: objects_69
+    second: 13
   - first:
       213: 5760800594879907098
     second: objects_70
@@ -367,7 +367,7 @@ TextureImporter:
     second: objects_120
   - first:
       213: 8626818278983215672
-    second: objects_121
+    second: 13
   - first:
       213: -1760756981417539202
     second: objects_122
@@ -437,6 +437,9 @@ TextureImporter:
   - first:
       213: 1702683679510850378
     second: objects_96
+  - first:
+      213: 8333231276030249781
+    second: objects_2
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -594,13 +597,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: objects_2
+      name: Herb
       rect:
         serializedVersion: 2
-        x: 34
-        y: 305
-        width: 14
-        height: 14
+        x: 32
+        y: 304
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2001,13 +2004,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: objects_69
+      name: HealthItem
       rect:
         serializedVersion: 2
-        x: 16
-        y: 226
-        width: 31
-        height: 11
+        x: 32
+        y: 225
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3093,7 +3096,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: objects_121
+      name: 13
       rect:
         serializedVersion: 2
         x: 193
@@ -3508,6 +3511,27 @@ TextureImporter:
       bones: []
       spriteID: 25c96c1f23990f145bdc0ad759f00917
       internalID: 901927284399968204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: objects_2
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 191
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: baa99d0b9cba30440bf580643a92ffd5
+      internalID: 8333231276030249781
       vertices: []
       indices: 
       edges: []

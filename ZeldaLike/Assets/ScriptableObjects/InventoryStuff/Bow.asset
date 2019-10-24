@@ -10,12 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c42fe8de97515e849b55705da8e6f716, type: 3}
-  m_Name: SoldierSword
+  m_Name: Bow
   m_EditorClassIdentifier: 
-  itemName: "\u7528\u65E7\u7684\u7BAD\u77E2"
-  itemDescription: "\u5C3E\u90E8\u7684\u7BAD\u7C07\u65E9\u5DF2\u5149\u79C3, \u6293\u4F4F\u5E95\u90E8\u6325\u821E\u8D77\u6765,
-    \u4E5F\u80FD\u5145\u5F53\u4E0B\u9632\u8EAB\u7684\u6B66\u5668"
-  itemImage: {fileID: 21300000, guid: 1775d7ec4bfa637418a8d1b57857abfe, type: 3}
+  itemName: "\u795E\u81C2\u5F13"
+  itemDescription: "\u767E\u6B65\u7A7F\u6768 \u96C1\u8FC7\u5347\u5929"
+  itemImage: {fileID: 21300000, guid: d06666171d6097a44a3ccc7ce7756df4, type: 3}
   numberHeld: 1
   usable: 0
   unique: 1

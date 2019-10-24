@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c42fe8de97515e849b55705da8e6f716, type: 3}
+  m_Name: RedHealthPotion
+  m_EditorClassIdentifier: 
+  itemName: "\u751F\u547D\u7CBE\u534E"
+  itemDescription: "\u4E00\u53E3\u4E0B\u53BB\u795E\u6E05\u6C14\u723D"
+  itemImage: {fileID: 7449681303411575530, guid: beaa0a3b317a3384492231211a1a3112,
+    type: 3}
+  numberHeld: 1
+  usable: 1
+  unique: 0
+  thisEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6775798316334917772, guid: aa95ccac194c7b04e95117f05a19f3c1,
+          type: 3}
+        m_MethodName: Use
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 5
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null

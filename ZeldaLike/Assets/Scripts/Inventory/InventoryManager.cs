@@ -15,6 +15,7 @@ public class InventoryManager : MonoBehaviour
     private Text descriptionText;
     [SerializeField]
     private GameObject useButton;
+    public InventoryItem currentItem;
     
     void MakeInventorySlots()
     {
@@ -53,4 +54,18 @@ public class InventoryManager : MonoBehaviour
     {
         
     }
+
+    public void SetupDescriptionAndButton(string newDescriptiongString,bool isButtonUsable,InventoryItem newItem)
+    {
+        currentItem = newItem;
+        descriptionText.text = newDescriptiongString;
+        useButton.SetActive(isButtonUsable);
+    }
+
+    public void UseButtonPressed()
+    {
+        currentItem.Use();
+    }
+
+    
 }
