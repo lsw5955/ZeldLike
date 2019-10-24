@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c42fe8de97515e849b55705da8e6f716, type: 3}
+  m_Name: SoldierSword
+  m_EditorClassIdentifier: 
+  itemName: "\u7528\u65E7\u7684\u7BAD\u77E2"
+  itemDescription: "\u80C3\u90E8\u7684\u7BAD\u7C07\u65E9\u5DF2\u5149\u79C3, \u6293\u4F4F\u5E95\u90E8\u6325\u821E\u8D77\u6765,
+    \u4E5F\u80FD\u5145\u5F53\u4E0B\u9632\u8EAB\u7684\u6B66\u5668"
+  itemImage: {fileID: 21300000, guid: 1775d7ec4bfa637418a8d1b57857abfe, type: 3}
+  numberHeld: 1
+  usable: 0
+  unique: 1

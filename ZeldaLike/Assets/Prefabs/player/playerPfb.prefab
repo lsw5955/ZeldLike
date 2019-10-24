@@ -432,7 +432,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6971951456656497540}
   - component: {fileID: 2654002097636870602}
-  - component: {fileID: 5522974358821876417}
   m_Layer: 0
   m_Name: MinimapCamera
   m_TagString: Untagged
@@ -497,14 +496,6 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!81 &5522974358821876417
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6375456705190853346}
-  m_Enabled: 1
 --- !u!1 &7428047043137692546
 GameObject:
   m_ObjectHideFlags: 0
@@ -671,6 +662,12 @@ MonoBehaviour:
   playerHit: {fileID: 0}
   projectile: {fileID: 0}
   bow: {fileID: 0}
+  flashColor: {r: 0, g: 0, b: 0, a: 0}
+  regularColor: {r: 0, g: 0, b: 0, a: 0}
+  flashDuration: 0
+  numberOfFlash: 0
+  triggerCollider: {fileID: 0}
+  mySprite: {fileID: 0}
 --- !u!95 &6692937251591558718
 Animator:
   serializedVersion: 3

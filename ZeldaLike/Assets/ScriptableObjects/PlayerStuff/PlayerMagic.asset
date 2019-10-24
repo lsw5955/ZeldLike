@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f64463ab7de6ddf40a8d1003033ec21a, type: 3}
-  m_Name: HeartContainers
+  m_Name: PlayerMagic
   m_EditorClassIdentifier: 
-  initialValue: 3
-  runtimeValue: 5
+  initialValue: 0
+  runtimeValue: 0
