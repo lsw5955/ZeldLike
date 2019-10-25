@@ -16,7 +16,7 @@ MonoBehaviour:
   itemDescription: "\u4E00\u53E3\u4E0B\u53BB\u795E\u6E05\u6C14\u723D"
   itemImage: {fileID: 7449681303411575530, guid: beaa0a3b317a3384492231211a1a3112,
     type: 3}
-  numberHeld: 0
+  numberHeld: 1
   usable: 1
   unique: 0
   thisEvent:

@@ -21,6 +21,7 @@ public class InventorySlot : MonoBehaviour
         thisManager = newManager;
         if (thisItem)
         {
+            Debug.Log("我执行到这里了啊");
             itemImange.sprite = thisItem.itemImage;
             itemNumberText.text = "" + thisItem.numberHeld;
         }

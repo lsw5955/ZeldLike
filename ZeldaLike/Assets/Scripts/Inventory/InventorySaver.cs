@@ -7,7 +7,7 @@ using UnityEngine;
 public class InventorySaver : MonoBehaviour
 {
     [SerializeField] private PlayerInventory myInventory;
-    
+
     private void OnEnable()
     {
         myInventory.myInventory.Clear();
@@ -22,7 +22,7 @@ public class InventorySaver : MonoBehaviour
     public void ResetScriptables()
     {
         int i = 0;
-        while(File.Exists(Application.persistentDataPath + string.Format("/{0}.inv", i)))
+        while (File.Exists(Application.persistentDataPath + string.Format("/{0}.inv", i)))
         {
             File.Delete(Application.persistentDataPath + string.Format("/{0}.inv", i));
             i++;
@@ -46,8 +46,9 @@ public class InventorySaver : MonoBehaviour
     public void LoadScriptables()
     {
         int i = 0;
-        while(File.Exists(Application.persistentDataPath + string.Format("/{0}.inv", i)))
+        while (File.Exists(Application.persistentDataPath + string.Format("/{0}.inv", i)))
         {
+            Debug.Log(Application.persistentDataPath);
             var temp = ScriptableObject.CreateInstance<InventoryItem>();
 
             FileStream file = File.Open(Application.persistentDataPath + string.Format("/{0}.inv", i), FileMode.Open);
@@ -56,6 +57,6 @@ public class InventorySaver : MonoBehaviour
             file.Close();
             myInventory.myInventory.Add(temp);
             i++;
-        }        
+        }
     }
 }

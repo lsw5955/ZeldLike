@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-[CreateAssetMenu(fileName = "New Item",menuName = "Inventory/道具(Item)")]
+[CreateAssetMenu(fileName = "New Item",menuName = "Inventory/(Item)")]
+[System.Serializable]
 public class InventoryItem : ScriptableObject
 {
     public string itemName;
@@ -19,9 +20,8 @@ public class InventoryItem : ScriptableObject
         if(numberHeld > 0)
         {
             thisEvent.Invoke();
-            Debug.Log(itemName + "被使用了哟.");
-        }
-        
+            Debug.Log(itemName + "is used");
+        }        
     }
 
     public void DecreaseAmount()
