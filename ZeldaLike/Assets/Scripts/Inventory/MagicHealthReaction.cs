@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class MagicHealthReaction : MonoBehaviour
 {
-    public FloatValue playerMagic;
+    public Inventory playerInventory;
     public Signaler magicSignal;
     
     public void Use(int amountToIncrease)
     {
-        playerMagic.runtimeValue += amountToIncrease;
+        playerInventory.currentMagic = playerInventory.maxMagic < (playerInventory.currentMagic + amountToIncrease) ? playerInventory.maxMagic:playerInventory.currentMagic + amountToIncrease;
         magicSignal.Raise();
     }
 }

@@ -29,7 +29,6 @@ public class InventoryManager : MonoBehaviour
                 InventorySlot newSlot = temp.GetComponent<InventorySlot>();
                 if(newSlot)
                 {
-                    Debug.Log("我可是根红苗正!");
                     newSlot.Setup(playerInventory.myInventory[i], this);
                 }
             }
@@ -43,8 +42,9 @@ public class InventoryManager : MonoBehaviour
     }
 
     // Start is called before the first frame update
-    void Start()
+    void OnEnable()
     {
+        ClearInventorySlots();
         MakeInventorySlots();
         SetTextAndButton("", false);  
     }
@@ -65,7 +65,15 @@ public class InventoryManager : MonoBehaviour
     public void UseButtonPressed()
     {
         currentItem.Use();
+        ClearInventorySlots();
+        MakeInventorySlots();
     }
 
-    
+    void ClearInventorySlots()
+    {
+        for(int i = 0; i < inventoryPanel.transform.childCount;i++)
+        {
+            Destroy(inventoryPanel.transform.GetChild(i).gameObject);        
+        }
+    }
 }

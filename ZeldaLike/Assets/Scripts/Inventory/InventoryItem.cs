@@ -16,7 +16,20 @@ public class InventoryItem : ScriptableObject
 
     public void Use()
     {
-        Debug.Log("使用物品!");
-        thisEvent.Invoke();
+        if(numberHeld > 0)
+        {
+            thisEvent.Invoke();
+            Debug.Log(itemName + "被使用了哟.");
+        }
+        
+    }
+
+    public void DecreaseAmount()
+    {
+        numberHeld--;
+        if(numberHeld<0)
+        {
+            numberHeld = 0;
+        }
     }
 }

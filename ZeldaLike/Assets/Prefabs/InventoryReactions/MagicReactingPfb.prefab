@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 480396398406512272}
   - component: {fileID: -257183971056522378}
   m_Layer: 0
-  m_Name: MagicReacting
+  m_Name: MagicReactingPfb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -43,5 +43,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50e2447b05c0ad94eb1216292c49d403, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerMagic: {fileID: 11400000, guid: f19371bed371e254bacce663f015ba16, type: 2}
+  playerInventory: {fileID: 11400000, guid: 235a2218ee2826b479b0097c0cc28b0a, type: 2}
   magicSignal: {fileID: 11400000, guid: d8ce585868711c04b8fe4e6fbe7fa880, type: 2}

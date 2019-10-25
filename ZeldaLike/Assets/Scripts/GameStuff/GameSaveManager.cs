@@ -11,13 +11,11 @@ public class GameSaveManager : MonoBehaviour
     private void OnEnable()
     {
         LoadScriptables();
-        Debug.Log("我读取了欧耶");
     }
 
     private void OnDisable()
     {
         SaveScriptables();
-        Debug.Log("我存储了欧耶");
     }
 
     public void ResetScriptables()

@@ -6,11 +6,16 @@ using UnityEngine.SceneManagement;
 public class PauseManager : MonoBehaviour
 {
     private bool isPaused;
+    public GameObject inventoryPanel;
     public GameObject pausePanel;
+    public bool usingPausePanel;
 
     private void Start()
     {
         isPaused = false;
+        inventoryPanel.SetActive(false);
+        pausePanel.SetActive(false);
+        usingPausePanel = false;
     }
 
     private void Update()
@@ -39,11 +44,28 @@ public class PauseManager : MonoBehaviour
         {
             pausePanel.SetActive(true);
             Time.timeScale = 0f;
+            usingPausePanel = true;
         }
         else
         {
             pausePanel.SetActive(false);
             Time.timeScale = 1f;
+            inventoryPanel.SetActive(false);
+        }
+    }
+
+    public void SwitchPanels()
+    {
+        usingPausePanel = !usingPausePanel;
+        if(usingPausePanel)
+        {
+            pausePanel.SetActive(true);
+            inventoryPanel.SetActive(false);
+        }
+        else
+        {
+            inventoryPanel.SetActive(true);
+            pausePanel.SetActive(false);
         }
     }
 }
